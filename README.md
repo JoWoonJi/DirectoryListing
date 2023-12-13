@@ -67,6 +67,7 @@ GitHub repository
 ---
 
 - 이제 SQL Injection 공격에 취약점이 있는지 테스트해 보자. SQL Injection의 대표적인 구문인 ‘ or ‘1’=’1 구문. 1=1은 반드시 참이고 or 이기때문에 sql 쿼리문을 비밀번호에 상관없이 무조건 참으로 만들어 준다.
+- SELECT * FROM MEMBER WHERE user_id='admin' or '1'='1' 이런 sql 쿼리문 형태
 
 ![3 SQL injection의 대표적인 구문으로 관리자 계정을 탈취해보자](https://github.com/JoWoonJi/DirectoryListing-SQL_Injection/assets/153145539/ff1c26fc-50cd-4db1-83e1-81810a3e1fe6)
 
