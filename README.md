@@ -38,13 +38,13 @@ GitHub repository
 
 ---
 
-- 이제 디렉터리 리스팅 공격을 방어해보자. 아파치 웹서버를 활용하고 있으므로 httpd.conf 파일에서 indexes 지시자를 찾아 주석처리 해주거나 삭제해준다.
+- 이제 디렉터리 리스팅 공격을 방어해보자. 아파치 웹서버를 사용하고 있으므로 httpd.conf 파일에서 indexes 지시자를 찾아 주석처리 해주거나 삭제해준다.
 
 ![3 apache conf파일 수정하여 디렉터리 리스팅을 막아보자 ](https://github.com/JoWoonJi/DirectoryListing-SQL_Injection/assets/153145539/189125db-2bce-4cf5-9d66-106095c4fb1b)
 
 ---
 
-- 디렉터리 리스팅 방어 성공. 똑같이 테스트 해 보면, 접근 권한이 없어 거부된 것이 보인다. indexes 지시자는 이렇게 하위 디렉터리 목록을 출력해주므로 삭제해주는 것이 좋고, FollowSymLinks 옵션만 삭제한다면 link 파일만 삭제되기 때문에 indexes지시자까지 삭제해줘야 한다.
+- 디렉터리 리스팅 방어 성공// 똑같이 테스트 해 보면, 접근 권한이 없어 거부된 것이 보인다. indexes 지시자는 이렇게 하위 디렉터리 목록을 출력해주므로 삭제해주는 것이 좋고, FollowSymLinks 옵션만 삭제한다면 link 파일만 삭제되기 때문에 indexes지시자까지 삭제해줘야 한다.
 
 ![4 디렉터리에 접근되지 않고 거부](https://github.com/JoWoonJi/DirectoryListing-SQL_Injection/assets/153145539/128e6f05-a75c-41b5-a7ae-664681afb239)
 
@@ -54,7 +54,7 @@ GitHub repository
 
 # 2. SQL Injection
 
-- SQL injection은 가장 간단하지만 성공한다면 굉장히 큰 피해를 일으킨다. 그래서 웬만하면 다 보안코딩이 되어있지만, 사진처럼 허술한 페이지를 발견한다면 sql injection에 취약점이 있지 않은지 테스트 해 보자.
+- SQL injection은 가장 간단하지만 성공한다면 굉장히 큰 피해를 일으킨다. 그래서 웬만하면 보안코딩이 되어있지만, 사진처럼 허술한 페이지를 발견한다면 sql injection에 취약점이 있는지 테스트 해 보자.
 
 ![1 SQL Injection test admin 입력하고 로그인해 보기](https://github.com/JoWoonJi/DirectoryListing-SQL_Injection/assets/153145539/a5f377a3-ce4f-47ce-b294-be1a33de5e14)
 
