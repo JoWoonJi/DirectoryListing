@@ -14,7 +14,7 @@ GitHub repository
 
 - [x]  디렉터리 리스팅 취약점 테스트 및 방어
 - [x]  SQL Injection 테스트 및 방어
-- [x]  유재욱 멘토님 코멘트대로 preapared statement에 대해 알아보기`escaping보단 pstmt와같이 원천방어할 수 있게 하는게 중요`
+- [x]  유재욱 멘토님 코멘트, preapared statement에 대해 알아보기 #`escaping보단 pstmt와같이 원천방어할 수 있게 하는게 중요`
 - [ ]  pstmt 적용해보기. 바드와 gpt를 활용해 보았지만 계속 에러가 나서 실패.
 
 <aside>
