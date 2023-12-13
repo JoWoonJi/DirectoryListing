@@ -14,7 +14,7 @@ GitHub repository
 
 - [x]  디렉터리 리스팅 취약점 테스트 및 방어
 - [x]  SQL Injection 테스트 및 방어
-- [x]  유재욱 멘토님 코멘트, pstmt에 대해 알아보기 #`escaping보단 pstmt와같이 원천방어할 수 있게 하는게 중요`
+- [x]  유재욱 멘토님 코멘트, pstmt에 대해 알아보기 `escaping보단 pstmt와같이 원천방어할 수 있게 하는게 중요`
 - [ ]  preapared statement 적용해보기. 바드와 gpt를 활용해 보았지만 계속 에러가 나서 실패.
 
 <aside>
@@ -25,7 +25,7 @@ GitHub repository
 ---
 
 
-
+    
 # 1. Directory Listing
 
 - URL에서 일정 부분을 지우고 접속하면 특정 디렉터리나 하위 디렉터리가 노출되게 되는데 이를 디렉터리 리스팅 공격이라고 한다. login_view.php 부분을 지우고 homepage 디렉터리에 접근이 되는지 테스트해 보자.
@@ -55,7 +55,7 @@ GitHub repository
 ---
 
 
-
+    
 # 2. SQL Injection
 
 - SQL injection은 가장 간단하지만 성공한다면 굉장히 큰 피해를 일으킨다. 그래서 웬만하면 보안코딩이 되어있지만, 사진처럼 허술한 페이지를 발견한다면 sql injection에 취약점이 있는지 테스트 해 보자.
