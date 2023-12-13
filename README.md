@@ -30,8 +30,8 @@ GitHub repository
 
 - URL에서 일정 부분을 지우고 접속하면 특정 디렉터리나 하위 디렉터리가 노출되게 되는데 이를 디렉터리 리스팅 공격이라고 한다. login_view.php 부분을 지우고 homepage 디렉터리에 접근이 되는지 테스트해 보자.
 
-![1 디렉터리 리스팅 취약점 테스트]([https://github.com/JoWoonJi/DirectoryListing-SQL_Injection/assets/153145539/8338bfea-b7fa-4a6d-a851-8730845a8dc9](https://github.com/JoWoonJi/DirectoryListing-SQL_Injection/blob/main/img/1.%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC%20%EB%A6%AC%EC%8A%A4%ED%8C%85%20%EC%B7%A8%EC%95%BD%EC%A0%90%20%ED%85%8C%EC%8A%A4%ED%8A%B8.jpg))
-https://github.com/JoWoonJi/DirectoryListing-SQL_Injection/blob/main/img/1.%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC%20%EB%A6%AC%EC%8A%A4%ED%8C%85%20%EC%B7%A8%EC%95%BD%EC%A0%90%20%ED%85%8C%EC%8A%A4%ED%8A%B8.jpg
+![1 디렉터리 리스팅 취약점 테스트](https://github.com/JoWoonJi/DirectoryListing-SQL_Injection/blob/main/img/1.%EB%94%94%EB%A0%89%ED%84%B0%EB%A6%AC%20%EB%A6%AC%EC%8A%A4%ED%8C%85%20%EC%B7%A8%EC%95%BD%EC%A0%90%20%ED%85%8C%EC%8A%A4%ED%8A%B8.jpg)
+
 ---
 
 - 이처럼 디렉터리가 노출되게 되면 여러 문제가 발생하는데 공격자가 데이터를 그대로 탈취할 수도 있고 사진과 같이 db.php의 원본 소스를 보게 된다면 DB 루트 계정의 비밀번호가 그대로 노출 될 수도 있다.
