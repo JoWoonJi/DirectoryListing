@@ -24,6 +24,8 @@ GitHub repository
 
 ---
 
+
+
 # 1. Directory Listing
 
 - URL에서 일정 부분을 지우고 접속하면 특정 디렉터리나 하위 디렉터리가 노출되게 되는데 이를 디렉터리 리스팅 공격이라고 한다. login_view.php 부분을 지우고 homepage 디렉터리에 접근이 되는지 테스트해 보자.
@@ -51,6 +53,8 @@ GitHub repository
 ---
 
 ---
+
+
 
 # 2. SQL Injection
 
