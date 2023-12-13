@@ -59,7 +59,7 @@ GitHub repository
     
 # 2. SQL Injection
 
-- SQL injection은 가장 간단하지만 성공한다면 굉장히 큰 피해를 일으킨다. 그래서 웬만하면 보안코딩이 되어있지만, 사진처럼 허술한 페이지를 발견한다면 sql injection에 취약점이 있는지 테스트 해 보자.
+- SQL injection은 가장 간단하지만 성공한다면 굉장히 큰 피해를 일으킨다. 그래서 웬만하면 보안코딩이 되어있지만, 사진처럼 허술한 페이지를 발견한다면 sql injection에 취약점이 있는지 테스트 해 보자. admin과 아무비밀번호를 입력하여 로그인 시도.
 
 ![1 SQL Injection test admin 입력하고 로그인해 보기](https://github.com/JoWoonJi/DirectoryListing-SQL_Injection/assets/153145539/a5f377a3-ce4f-47ce-b294-be1a33de5e14)
 
@@ -72,7 +72,7 @@ GitHub repository
 ---
 
 - 이제 SQL Injection 공격에 취약점이 있는지 테스트해 보자. SQL Injection의 대표적인 구문인 ‘ or ‘1’=’1 구문. 1=1은 반드시 참이고 or 이기때문에 sql 쿼리문을 비밀번호에 상관없이 무조건 참으로 만들어 준다.
--  *SELECT * FROM MEMBER WHERE user_id='admin' or '1'='1' 이런 sql 쿼리문 형태*
+-  *SELECT * FROM MEMBER WHERE user_id='admin' or '1'='1'* 이런 sql 쿼리문 형태
 
 ![3 SQL injection의 대표적인 구문으로 관리자 계정을 탈취해보자](https://github.com/JoWoonJi/DirectoryListing-SQL_Injection/assets/153145539/ff1c26fc-50cd-4db1-83e1-81810a3e1fe6)
 
@@ -84,7 +84,7 @@ GitHub repository
 
 ---
 
-- 실제 db 내 admin계정이 있고 비밀번호가 adminpw!@#$인 것을 확인 할 수 있다.
+- 실제 DB 내 admin계정이 있고 비밀번호가 adminpw!@#$인 것을 확인 할 수 있다.
 
 ![5 DB 내 admin 계정 확인](https://github.com/JoWoonJi/DirectoryListing-SQL_Injection/assets/153145539/903a96ce-b1f5-4fb5-9586-c342859049be)
 
